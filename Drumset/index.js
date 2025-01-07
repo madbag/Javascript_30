@@ -1,12 +1,12 @@
     window.addEventListener("keydown", playSound)
-    // console.log(audio)
-    // console.log(key)
 
     function playSound(e){
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
         const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
         if(!audio) return; //stop the function from running off together
 
+        // console.log(audio)
+        // console.log(key)
         key.classList.add("playing");
         audio.currentTime = 0; //rewind the time to start
         audio.play();
