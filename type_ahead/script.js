@@ -12,4 +12,4 @@ function findMatches(wordToMatch, cities) {
     return cities.filter(place => {
         //city ofg 
     })
-} {
+} 
